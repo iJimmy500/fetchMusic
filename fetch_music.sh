@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Path Config
-SAVE_DIR="/Volumes/sigmaDrive/music"
+SAVE_DIR="./Downloads"
 
 echo "Song Fetcher"
 
