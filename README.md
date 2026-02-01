@@ -39,6 +39,10 @@ Output files are saved to `SAVE_DIR` as:
 - If `./Downloads` doesn’t exist, create it (or change `SAVE_DIR`).
 - Supported URLs depend on what `yt-dlp` supports.
 
+## AI Usage
+
+I used AI to make this `README.md` (i would never write all this bruh), and to learn/confirm the `yt-dlp` command/flags used in `fetch_music.sh` (around lines 18–29 as I write this). The rest of the script and project was written and debugged by me personally in Vim. #Transperency ammirite?
+
 ## Troubleshooting
 
 - **Command not found: yt-dlp**
