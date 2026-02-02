@@ -30,6 +30,11 @@ Current default:
 bash fetch_music.sh
 ```
 
+## GUI App (macOS)
+
+- **[Download]** Grab `musicFetch-macOS.zip` from GitHub Releases, then see the end-user guide in `MUSIC_FETCHER_APP.md`.
+- **[Source]** The GUI source is developed outside this repo at `/Volumes/sigmaDrive/fetchMusic_gui`.
+
 Output files are saved to `SAVE_DIR` as:
 
 - `Artist - Title.<ext>`
@@ -42,6 +47,8 @@ Output files are saved to `SAVE_DIR` as:
 ## AI Usage
 
 I used AI to make this `README.md` (i would never write all this bruh), and to learn/confirm the `yt-dlp` command/flags used in `fetch_music.sh` (around lines 18–29 as I write this). The rest of the script and project was written and debugged by me personally in Vim. #Transperency ammirite?
+
+**Update:** I used AI to make the macOS app for this.
 
 ## Troubleshooting
 
