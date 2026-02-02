@@ -2,6 +2,7 @@
 
 #Path Config
 SAVE_DIR="./Downloads"
+mkdir -p "$SAVE_DIR"
 
 echo "Song Fetcher"
 
@@ -15,20 +16,19 @@ echo "$song_name downloading..."
 
 #yt-dlp command
 
-yt-dlp -x \
+if yt-dlp -x \
 	--audio-format "$extension" \
 	--audio-quality 0 \
 	--embed-thumbnail \
 	--add-metadata \
-	--metadata-from-title "$artist_name - $song_name" \
 	--ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" \
-	--parse-metadata "title:%(title)s" \
 	--replace-in-metadata "title" ".*" "$song_name" \
 	--replace-in-metadata "artist" ".*" "$artist_name" \
 	-o "$SAVE_DIR/%(artist)s - %(title)s.%(ext)s" \
-	"$url"
-
-echo "___"
-echo "DONE! FILE @ $SAVE_DIR/$artist_name - $song_name.$extension"
-
-
+	"$url"; then
+	echo "___"
+	echo "DONE! FILE @ $SAVE_DIR/$artist_name - $song_name.$extension"
+else
+	echo "ERROR: Download failed!"
+	exit 1
+fi
