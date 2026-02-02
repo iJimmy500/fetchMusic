@@ -14,6 +14,31 @@ This guide is for the **macOS app** (`Music Fetcher.app`). A simplified GUI base
 1. Drag **Music Fetcher.app** into **Applications**
 2. Done!
 
+## If macOS blocks it (Gatekeeper)
+
+Because this app isn’t Apple-signed/notarized, macOS may show a security prompt ("can’t be opened" / "unidentified developer"). I am broke and cant afford a developer license, I pinky-promise I dont want to hack you
+
+### Easiest option (no Terminal)
+
+1. In **Applications**, right-click **Music Fetcher.app**
+2. Click **Open**
+3. Click **Open** again to confirm
+
+If you don’t see the Open option, you can also go to:
+
+- System Settings
+- Privacy & Security
+- Find the "Music Fetcher" blocked message
+- Click **Open Anyway**
+
+### Terminal option
+
+This removes the quarantine flag:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Music Fetcher.app"
+```
+
 ## One-time requirements
 
 This app uses `yt-dlp` + `ffmpeg` + GTK installed via Homebrew:
