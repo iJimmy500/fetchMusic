@@ -16,7 +16,7 @@ This guide is for the **macOS app** (`Music Fetcher.app`). A simplified GUI base
 
 ## If macOS blocks it (Gatekeeper)
 
-Because this app isn’t Apple-signed/notarized, macOS may show a security prompt ("can’t be opened" / "unidentified developer"). I am broke and cant afford a developer license, I pinky-promise I dont want to hack you
+Because this app isn’t Apple-signed/notarized, macOS may show a security prompt ("can’t be opened" / "unidentified developer"). I am broke and cant afford a developer license, I pinky-promise I dont want to hack you.
 
 ### Easiest option (no Terminal)
 
